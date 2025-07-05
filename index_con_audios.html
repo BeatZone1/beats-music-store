@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda de Música</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      padding: 40px;
+      text-align: center;
+    }
+    .track {
+      background-color: white;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    .track h2 {
+      margin-top: 0;
+    }
+    .buy-button {
+      margin-top: 10px;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+    .buy-button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tienda de Música</h1>
+
+  <div class="track">
+    <h2>Tema 1 - Previsualización</h2>
+    <audio controls>
+      <source src="tema1.mp3" type="audio/mpeg">
+      Tu navegador no soporta la reproducción de audio.
+    </audio>
+    <br>
+    <a class="buy-button" href="comprar.html?producto=tema1">Comprar</a>
+  </div>
+
+  <div class="track">
+    <h2>Tema 2 - Previsualización</h2>
+    <audio controls>
+      <source src="tema2.mp3" type="audio/mpeg">
+      Tu navegador no soporta la reproducción de audio.
+    </audio>
+    <br>
+    <a class="buy-button" href="comprar.html?producto=tema2">Comprar</a>
+  </div>
+
+</body>
+</html>

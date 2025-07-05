@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comprar Tema</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      padding: 40px;
+      text-align: center;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .option {
+      margin: 20px 0;
+    }
+    .contact-link {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .contact-link:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Comprar o Contactar</h1>
+    <p>Gracias por tu interés en adquirir uno de nuestros temas.</p>
+    <div class="option">
+      <h2>Opción 1: Comprar directamente</h2>
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+        <input type="hidden" name="cmd" value="_xclick">
+        <input type="hidden" name="business" value="beatzonem.b.m.1@gmail.com">
+        <input type="hidden" name="item_name" value="Beat musical">
+        <input type="hidden" name="amount" value="2.99">
+        <input type="hidden" name="currency_code" value="USD">
+        <input type="hidden" name="return" value="https://tuweb.com/gracias.html">
+        <input type="hidden" name="cancel_return" value="https://tuweb.com/cancelado.html">
+        <input type="submit" value="Pagar con PayPal">
+      </form>
+    </div>
+
+    <div class="option">
+      <h2>Opción 2: Contactarme directamente</h2>
+      <a class="contact-link" href="https://wa.me/34633930556" target="_blank">WhatsApp</a>
+      <a class="contact-link" href="mailto:beatzonem.b.m.1@gmail.com" target="_blank">Correo</a>
+      <a class="contact-link" href="https://instagram.com/beatzonem.b.m" target="_blank">Instagram</a>
+    </div>
+  </div>
+</body>
+</html>
