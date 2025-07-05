@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Tienda de Música</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            padding: 50px;
+        }
+        .cancion {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        audio {
+            width: 100%;
+        }
+        .comprar {
+            background: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .comprar:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a Mi Tienda de Música</h1>
+
+    <div class="cancion">
+        <h2>Canción Demo 1</h2>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+        <br>
+        <button class="comprar" onclick="alert('Para comprar, contáctame por WhatsApp o PayPal.')">Comprar</button>
+    </div>
+
+    <div class="cancion">
+        <h2>Canción Demo 2</h2>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+        </audio>
+        <br>
+        <button class="comprar" onclick="alert('Para comprar, contáctame por WhatsApp o PayPal.')">Comprar</button>
+    </div>
+</body>
+</html>
